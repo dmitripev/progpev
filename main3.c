@@ -14,7 +14,5 @@ int main()
     scanf("%o", &n);
     y = n ^ x;
     printf("%o\n", y);
-
-
-
+    return 0;
 }
