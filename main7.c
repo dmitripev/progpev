@@ -19,11 +19,14 @@ struct Circle
     struct Point center;
     int radius;
 };
-struct ADSL
+union ADSL
 {
+    int x;
+    struct {
     unsigned short DSL : 1;
     unsigned short PPP : 1;
     unsigned short Link : 1;
+    };
 };
 int main()
 {
@@ -32,8 +35,11 @@ int main()
     struct Circle N = {{1, 1}, 5};
     float l;
     l = 2 * N.radius * M_PI;
-    printf("%f", l);
+    printf("%f\n", l);
 
+    union ADSL bit;
+    scanf("%x", &bit.x);
+    printf("DSL = %u, PPP = %u, Link = %u", bit.DSL, bit.PPP, bit.Link);
 
-
+    return 0;
 }
