@@ -43,20 +43,22 @@ int Segment(char*s1, char *s2) {
     return max_count;
 }
 
+int Leks (char*s1, char *s2)
+{
+    
+}
 int main() {
     char s1[100], s2[100], s1_copy[100];
     gets(s1);
     gets(s2);
 
     Sum(s1, s2); //1
-
+    
     printf("\n");
-    printf("%d\n", Comp(s1, s2)); //2
 
     Copy(s1, s1_copy);//3
 
     printf("\n");
-    printf("%c\n", Enter(s1, s2)); //4
 
     printf("%d", Segment(s1, s2)); //5
 
