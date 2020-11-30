@@ -18,10 +18,10 @@ void Copy(char*s1, char*s2) {
 
 int Search(char*s1, char sym) {
     int res = -1;
-    for (int i = 0; i < Len(s1); i++) 
+    for (int i = 0; i < Len(s1); i++)
     {
         if (s1[i] == sym)
-           res = i;
+            res = i;
     }
     return res;
 }
@@ -29,15 +29,19 @@ int Search(char*s1, char sym) {
 int Segment(char*s1, char *s2) {
     int count = 0;
     int max_count = 0;
+    int flag;
     for (int i = 0; i < Len(s1); i++) {
+        flag = 1;
         for (int j = 0; j < Len(s2); j++) {
-            if (s1[i] != s2[j]) {
-                count = -1;
+            if (s1[i] == s2[j]) {
+                ++count;
+                flag = 0;
+                break;
             }
         }
-        count++;
-        if (max_count < count) {
+        if ((flag == 1) && (max_count < count)) {
             max_count = count;
+            count = 0;
         }
     }
     return max_count;
@@ -45,23 +49,40 @@ int Segment(char*s1, char *s2) {
 
 int Leks (char*s1, char *s2)
 {
-    
+     char leks[100];
+     int count = 0;
+     for (int i = 0; i < Len(s1); i++)
+     {
+         leks[count] = s1[i];
+         for (int j = 0; j < Len(s2); j++)
+         {
+             if ((s1[i] == s2[j]) || (i == Len(s1) - 1))
+             {
+                 if (i == Len(s1) - 1)
+                     ++count;
+                 for (int k = 0; k < count; k++)
+                     printf("%c", leks[k]);
+                 printf("\n");
+                 count = -1;
+                 break;
+             }
+         }
+         ++count;
+     }
+
 }
 int main() {
     char s1[100], s2[100], s1_copy[100];
     gets(s1);
     gets(s2);
-
-    Sum(s1, s2); //1
-    
     printf("\n");
-
-    Copy(s1, s1_copy);//3
-
+    Copy(s1, s1_copy);//5
     printf("\n");
-
-    printf("%d", Segment(s1, s2)); //5
-
-
+    printf("%d\n",Len(s1));//7
+    char c;
+    scanf("%c", &c);
+    printf("\n%d\n", Search(s1, c));//9
+    printf("%d\n", Segment(s1, s2)); //11
+    Leks(s1, s2);//13
     return 0;
 }
