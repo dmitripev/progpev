@@ -5,7 +5,7 @@
 ### Политика
 * [Гигиенические рекомендации по работе с Telegram](https://telegra.ph/Gigienicheskie-rekomendacii-po-rabote-s-Telegram-04-24)
 * [Хайек: *Почему я не консерватор*](https://old.inliberty.ru/library/153-pochemu-ya-nenbspkonservator)
-* [~~Лубянская Федерация~~ - ФСБ](https://fsb.dossier.center/)
+* [Лубянская Федерация - ФСБ](https://fsb.dossier.center/)
 * [Опыт люстраций в Восточной Европе](https://zona.media/article/2019/11/13/lustratio)
 ### Сериалы
 * [Друзья](https://druzya.online/)
