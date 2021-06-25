@@ -6,6 +6,7 @@
 * [Бесплатный Фотошоп](http://photopea.com)
 ### Политика
 * [Хайек: *Почему я не консерватор*](https://old.inliberty.ru/library/153-pochemu-ya-nenbspkonservator)
+* [Библиотека InLiberty](https://old.inliberty.ru/library/autors)
 * [Лубянская Федерация - ФСБ](https://fsb.dossier.center/)
 * [Опыт люстраций в Восточной Европе](https://zona.media/article/2019/11/13/lustratio)
 * [Здесь был ГУЛАГ(7×7)](https://youtu.be/6JoPTrQd6z4)
